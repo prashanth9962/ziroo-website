@@ -1,0 +1,41 @@
+footer {
+    border-top: 1px solid var(--ln);
+    padding: 32px 52px 24px;
+}
+
+.ft-in {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.ft-logo {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--k);
+}
+
+.ft-logo b { font-style: normal; color: var(--o); font-weight: 600; }
+
+.ft-links { display: flex; gap: 18px; }
+
+.ftl {
+    font-size: 12px;
+    color: var(--k4);
+    text-decoration: none;
+    transition: color .14s;
+}
+
+.ftl:hover { color: var(--k); }
+
+.ft-r { font-size: 11.5px; color: var(--k4); }
+
+@media (max-width: 880px) {
+    footer { padding-left: 24px; padding-right: 24px; }
+}

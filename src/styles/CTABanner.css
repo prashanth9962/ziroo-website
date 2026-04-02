@@ -1,0 +1,217 @@
+/* FOMO ticker */
+.fomo-bar {
+    background: #FAFAF8;
+    border-top: 1px solid var(--ln);
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.fomo-inner {
+    display: flex;
+    gap: 40px;
+    animation: ticker 20s linear infinite;
+    white-space: nowrap;
+}
+
+.fomo-item {
+    font-size: 12px;
+    color: var(--k3);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+}
+
+.fomo-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--o);
+    opacity: .6;
+    flex-shrink: 0;
+}
+
+/* Waitlist */
+.wl {
+    padding: 130px 52px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wl::before {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(217,90,51,.03) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.wl-in {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.wl-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--k3);
+    margin-bottom: 22px;
+    letter-spacing: .02em;
+}
+
+.wl-live-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--o);
+    animation: pu 1.5s ease-in-out infinite;
+}
+
+.wl-h {
+    font-family: var(--serif);
+    font-size: clamp(36px, 6.5vw, 76px);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -.04em;
+    line-height: .97;
+    color: var(--k);
+    margin-bottom: 18px;
+}
+
+.wl-h b { font-style: normal; font-weight: 600; color: var(--o); }
+
+.wl-sub {
+    font-size: 17px;
+    color: var(--k3);
+    font-weight: 300;
+    line-height: 1.78;
+    margin-bottom: 16px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wl-urgency {
+    font-size: 14px;
+    color: var(--k3);
+    font-weight: 400;
+    margin-bottom: 38px;
+    letter-spacing: .01em;
+}
+
+.wl-nums {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.wln-n {
+    font-family: var(--serif);
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--o);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.wln-l {
+    font-size: 12px;
+    color: var(--k4);
+    letter-spacing: .02em;
+}
+
+.wl-form {
+    display: flex;
+    gap: 8px;
+    max-width: 420px;
+    margin: 0 auto 12px;
+}
+
+.wl-inp {
+    flex: 1;
+    background: #fff;
+    border: 1.5px solid var(--ln2);
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    color: var(--k);
+    font-family: var(--sans);
+    outline: none;
+    transition: border-color .15s;
+}
+
+.wl-inp::placeholder { color: var(--k4); }
+.wl-inp:focus { border-color: var(--o); }
+
+.wl-btn {
+    background: var(--o);
+    color: #fff;
+    padding: 14px 26px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    font-family: var(--sans);
+    transition: background .18s;
+    white-space: nowrap;
+}
+
+.wl-btn:hover { background: #B84A2A; }
+
+.wl-note {
+    font-size: 12px;
+    color: var(--k4);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.wl-proof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.wl-avs { display: flex; }
+
+.wl-av {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-left: -8px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: var(--serif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wl-av:first-child { margin-left: 0; }
+.av-1 { background: #E8A83A; color: #fff; }
+.av-2 { background: #5B9BD5; color: #fff; }
+.av-3 { background: #3DAE72; color: #fff; }
+.av-4 { background: #9B72E8; color: #fff; }
+.av-5 { background: #D05538; color: #fff; }
+
+.wl-ptxt { font-size: 12.5px; color: var(--k4); }
+.wl-ptxt b { color: var(--k2); font-weight: 500; }
+
+@media (max-width: 880px) {
+    .wl { padding-left: 24px; padding-right: 24px; }
+    .wl-form { flex-direction: column; }
+    .wl-nums { gap: 24px; }
+}

@@ -1,0 +1,14 @@
+:root {
+    --o: #D95A33;
+    --ob: rgba(217, 90, 51, 0.06);
+    --od: rgba(217, 90, 51, 0.16);
+    --k: #0F0E0C;
+    --k2: #35322A;
+    --k3: #878480;
+    --k4: #C0BDB8;
+    --ln: rgba(0, 0, 0, 0.07);
+    --ln2: rgba(0, 0, 0, 0.11);
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+    --mono: 'DM Mono', monospace;
+}

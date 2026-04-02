@@ -1,0 +1,67 @@
+.moves {
+    background: var(--k);
+    padding: 100px 52px;
+}
+
+.moves-in {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.moves-h {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4.5vw, 52px);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -.03em;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.moves-h b { font-style: normal; font-weight: 600; color: var(--o); }
+
+.moves-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,.38);
+    font-weight: 300;
+    line-height: 1.85;
+    margin-bottom: 44px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moves-pts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.mpt {
+    display: flex;
+    gap: 12px;
+    font-size: 14.5px;
+    color: rgba(255,255,255,.58);
+    line-height: 1.65;
+    align-items: flex-start;
+}
+
+.mpt-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--o);
+    flex-shrink: 0;
+    margin-top: 9px;
+}
+
+.mpt b { color: #fff; font-weight: 500; }
+
+@media (max-width: 880px) {
+    .moves { padding-left: 24px; padding-right: 24px; }
+}

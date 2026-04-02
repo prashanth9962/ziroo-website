@@ -1,0 +1,71 @@
+.trust {
+    padding: 80px 52px;
+    border-top: 1px solid var(--ln);
+}
+
+.trust-in {
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trust-h {
+    font-family: var(--serif);
+    font-size: clamp(20px, 2.5vw, 34px);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: -.025em;
+    line-height: 1.2;
+    color: var(--k);
+    margin-bottom: 9px;
+}
+
+.trust-h b { font-style: normal; font-weight: 600; color: var(--o); }
+
+.trust-sub {
+    font-size: 15px;
+    color: var(--k3);
+    font-weight: 300;
+    max-width: 420px;
+    margin: 0 auto 32px;
+    line-height: 1.82;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.tbadge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--k2);
+    font-weight: 400;
+}
+
+.tbadge-ico { font-size: 15px; }
+.tdiv { width: 1px; height: 18px; background: var(--ln2); }
+
+.trust-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.tp { text-align: center; }
+.tp-i { font-size: 20px; margin-bottom: 7px; }
+.tp-t { font-size: 13px; font-weight: 500; color: var(--k); margin-bottom: 3px; }
+.tp-s { font-size: 12px; color: var(--k3); line-height: 1.55; font-weight: 300; }
+
+@media (max-width: 880px) {
+    .trust { padding-left: 24px; padding-right: 24px; }
+    .trust-row { grid-template-columns: 1fr 1fr; }
+}

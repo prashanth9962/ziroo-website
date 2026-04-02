@@ -1,0 +1,102 @@
+/* Mirror table */
+.mir-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mir-table thead tr { border-bottom: 1px solid var(--k); }
+
+.mir-table thead th {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--k3);
+    padding: 0 0 14px;
+    text-align: left;
+}
+
+.mir-table thead th:first-child { width: 100px; }
+.mir-table thead th:nth-child(2) { width: 44%; }
+.mir-table tbody tr { border-bottom: 1px solid var(--ln); }
+.mir-table tbody tr:last-child { border-bottom: none; }
+.mir-table td { padding: 22px 0; vertical-align: top; }
+.mir-table td:first-child { padding-right: 20px; }
+
+.mir-num {
+    font-family: var(--serif);
+    font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1;
+    color: var(--o);
+}
+
+.mir-num.dark { color: var(--k); }
+
+.mir-cat {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: var(--k4);
+    margin-top: 5px;
+}
+
+.mir-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--k);
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.mir-desc {
+    font-size: 13.5px;
+    color: var(--k3);
+    line-height: 1.72;
+    font-weight: 300;
+}
+
+.mir-q {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--k4);
+    line-height: 1.55;
+}
+
+/* identity */
+.id-wide {
+    display: flex;
+    gap: 40px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--ln);
+}
+
+.id-wide:last-child { border-bottom: none; }
+.idw-col { flex: 1; }
+
+.idw-n {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--o);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.idw-n.dark { color: var(--k); }
+.idw-n.muted { color: var(--k3); }
+
+.idw-l {
+    font-size: 13px;
+    color: var(--k3);
+    line-height: 1.55;
+    font-weight: 300;
+}
+
+@media (max-width: 880px) {
+    .mir-table { display: none; }
+    .id-wide { flex-direction: column; gap: 20px; }
+}
