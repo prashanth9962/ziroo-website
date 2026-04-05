@@ -1,17 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import '../styles/CTABanner.css';
 
-const fomoItems = [
-    'Alex from New York joined 4 minutes ago',
-    '2 spots taken in the last hour',
-    'Sarah from London joined 12 minutes ago',
-    '847 professionals already building their graph',
-    'Mike from Singapore joined 28 minutes ago',
-    'Founding cohort closes when it closes — no set date',
-    'James from Dubai joined 41 minutes ago',
-    'Every day you wait, someone else\'s graph gets deeper',
-];
-
 const fomoLines = [
     'People are joining every few minutes',
     'Every day you wait, someone else\'s graph gets deeper',
@@ -65,19 +54,12 @@ export default function CTABanner() {
 
     return (
         <>
-            <div className="fomo-bar">
-                <div className="fomo-inner">
-                    {[...fomoItems, ...fomoItems].map((item, i) => (
-                        <span className="fomo-item" key={i}><span className="fomo-dot"></span>{item}</span>
-                    ))}
-                </div>
-            </div>
-
-            <section className="wl" id="waitlist">
+<section className="wl" id="waitlist">
                 <div className="wl-in">
                     <div className="wl-live r"><div className="wl-live-dot"></div><span>{fomoLine}</span></div>
 
-                    <h2 className="wl-h r">The founding<br />cohort closes<br /><b>soon.</b></h2>
+                    <h2 className="wl-h r">Every day you wait,<br />someone else's graph<br />gets <b>deeper.</b></h2>
+                    <p className="wl-cohort r">The founding cohort closes soon.</p>
 
                     <p className="wl-sub r d1">The first 500 users build their relationship graph months before anyone else. That head start compounds every single day.</p>
                     <p className="wl-urgency r d1">{urgency}</p>
@@ -89,7 +71,7 @@ export default function CTABanner() {
                     </div>
 
                     <div className="wl-form r">
-                        <input className="wl-inp" ref={emailRef} type="email" placeholder="Work email" disabled={submitted} />
+                        <input className="wl-inp" ref={emailRef} type="email" placeholder="Your email" disabled={submitted} />
                         <button
                             className="wl-btn"
                             onClick={joinWL}

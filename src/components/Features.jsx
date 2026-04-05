@@ -20,7 +20,7 @@ export default function Features() {
                     <div className="r">
                         <div className="fnum">01 · Chat</div>
                         <h2 className="fh">Ask anything.<br /><b>Full context.</b><br />Already there.</h2>
-                        <p className="fbody">Connect the tools you trust. Ziroo learns from them — so every question gets an answer that's ready to act on.</p>
+                        <p className="fbody">You've been explaining yourself to AI for two years. Your emails, your deals, your history — repeated every single time. Ziroo connects once. After that, it just knows.</p>
                     </div>
                     <div className="r d1">
                         <div className="pwin">
@@ -95,7 +95,7 @@ export default function Features() {
             <section className="feat" style={{ background: '#FAFAF8' }} id="mirror">
                 <div style={{ maxWidth: 960, margin: '0 auto' }}>
                     <div className="r" style={{ textAlign: 'center', marginBottom: 64 }}>
-                        <div className="fnum" style={{ textAlign: 'center', marginBottom: 14 }}>03 · Mirrors</div>
+                        <div className="fnum" style={{ textAlign: 'center', marginBottom: 14 }}>03 · What Ziroo sees</div>
                         <h2 style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(30px,4.5vw,52px)', fontWeight: 400, fontStyle: 'italic', letterSpacing: '-.03em', lineHeight: 1.08, color: 'var(--k)', marginBottom: 12 }}>
                             14 days of working with you.<br />Things you didn't know<br />about <b style={{ fontStyle: 'normal', fontWeight: 600, color: 'var(--o)' }}>yourself.</b>
                         </h2>
@@ -125,27 +125,15 @@ export default function Features() {
                                 <td><div className="mir-q">"I'm not a morning person. I'm an 86-minute person."</div></td>
                                 <td></td>
                             </tr>
+                            <tr>
+                                <td><div className="mir-num muted">0×</div><div className="mir-cat">Decisions</div></td>
+                                <td style={{ paddingRight: 24 }}><div className="mir-title">You opened a pricing doc before agreeing to a call</div><div className="mir-desc">You decide fast on people, slow on numbers. Zero times did you check pricing before saying yes.</div></td>
+                                <td><div className="mir-q">"I always thought I was careful with money. Turns out I'm careful with spreadsheets."</div></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
 
-                    <div className="r d2" style={{ marginTop: 0, borderTop: '1px solid var(--k)', paddingTop: 22 }}>
-                        <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: '.09em', textTransform: 'uppercase', color: 'var(--k4)', marginBottom: 16 }}>Identity · observed, not assumed</div>
-                        <div style={{ fontFamily: 'var(--serif)', fontSize: 'clamp(16px,2vw,22px)', fontWeight: 400, fontStyle: 'italic', color: 'var(--k)', marginBottom: 20, letterSpacing: '-.01em' }}>You decide fast on people. You stall on numbers.</div>
-                        <div className="id-wide">
-                            <div className="idw-col">
-                                <div className="idw-n">1.3d</div>
-                                <div className="idw-l">average time to commit after a first meeting</div>
-                            </div>
-                            <div className="idw-col">
-                                <div className="idw-n dark">11.4d</div>
-                                <div className="idw-l">average time to act on a financial decision</div>
-                            </div>
-                            <div className="idw-col">
-                                <div className="idw-n muted">0×</div>
-                                <div className="idw-l">you opened a pricing doc before agreeing to a call</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -155,7 +143,7 @@ export default function Features() {
                     <div className="r">
                         <div className="fnum">04 · Meeting notes</div>
                         <h2 className="fh">Be present.<br /><b>Ziroo keeps</b><br />the record.</h2>
-                        <p className="fbody">Every commitment captured the moment it's made. The follow-up is drafted before you close the window.</p>
+                        <p className="fbody">Every commitment captured the moment it's made. The follow-up drafted before the conversation ends.</p>
                     </div>
                     <div className="r d1">
                         <div className="meet-win">

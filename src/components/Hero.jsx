@@ -46,7 +46,7 @@ export default function Hero() {
             </div>
 
             <h1 className="h1 r d1">
-                The AI that<br />already <b>knows.</b>
+                The AI you never<br />have to <b>brief.</b>
             </h1>
             <p className="hsub r d2">Only what you allow. Always private. Already working.</p>
 
