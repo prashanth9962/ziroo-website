@@ -40,17 +40,10 @@
     margin-bottom: 36px;
 }
 
-.tbadge {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 13px;
-    color: var(--k2);
-    font-weight: 400;
+.tbadge-logo {
+    height: 64px;
+    object-fit: contain;
 }
-
-.tbadge-ico { font-size: 15px; }
-.tdiv { width: 1px; height: 18px; background: var(--ln2); }
 
 .trust-row {
     display: grid;

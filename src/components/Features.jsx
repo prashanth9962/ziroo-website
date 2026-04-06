@@ -18,7 +18,7 @@ export default function Features() {
             <section className="feat">
                 <div className="feat-grid">
                     <div className="r">
-                        <div className="fnum">01 · Chat</div>
+                        <div className="fnum">01 · Instant answers</div>
                         <h2 className="fh">Ask anything.<br /><b>Full context.</b><br />Already there.</h2>
                         <p className="fbody">You've been explaining yourself to AI for two years. Your emails, your deals, your history — repeated every single time. Ziroo connects once. After that, it just knows.</p>
                     </div>
@@ -48,9 +48,9 @@ export default function Features() {
             <section className="feat alt">
                 <div className="feat-grid rev">
                     <div className="r">
-                        <div className="fnum">02 · Brief</div>
+                        <div className="fnum">02 · Your daily brief</div>
                         <h2 className="fh">Four times a day.<br />Every reply<br /><b>already written.</b></h2>
-                        <p className="fbody">Ziroo surfaces what matters most. Every item has a draft ready. One tap — or say "send" out loud.</p>
+                        <p className="fbody">You don't open it. It opens your day. Four times, Ziroo puts what matters in front of you — already drafted, already ready before you sit down. Not a notification. The actual reply.</p>
                     </div>
                     <div className="r d1">
                         <div className="pwin">

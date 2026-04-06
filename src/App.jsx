@@ -5,7 +5,7 @@ import Story from './components/Story';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Trust from './components/Trust';
-import CTABanner from './components/CTABanner';
+import Voice from './components/Voice';
 import Footer from './components/Footer';
 import './styles/Mirrors.css';
 
@@ -31,8 +31,8 @@ export default function App() {
                 <Story />
                 <Features />
                 <HowItWorks />
+                <Voice />
                 <Trust />
-                <CTABanner />
             </main>
             <Footer />
         </>

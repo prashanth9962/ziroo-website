@@ -4,12 +4,11 @@ export default function Trust() {
     return (
         <section className="trust" id="trust">
             <div className="trust-in">
-                <h2 className="trust-h r">You decide what<br />Ziroo <b>knows.</b></h2>
+                <h2 className="trust-h r">Your privacy.<br />Our <b>priority.</b></h2>
                 <p className="trust-sub r d1">Connect only what you choose. Revoke anytime. Encrypted, private, never used to train any model.</p>
                 <div className="trust-badges r d2">
-                    <span className="tbadge">SOC 2 Type II</span>
-                    <div className="tdiv"></div>
-                    <span className="tbadge">ISO 27001</span>
+                    <img className="tbadge-logo" src="https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/69bd68e27263edea1a65c553_soc2-v2.png" alt="SOC 2 Type II" />
+                    <img className="tbadge-logo" src="https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/69bd6924bbd0153d8105ad63_iso-27001-v2%20(1).png" alt="ISO 27001" />
                 </div>
                 <div className="trust-row r">
                     <div className="tp"><div className="tp-t">You control access</div><div className="tp-s">Connect and disconnect any tool, anytime.</div></div>

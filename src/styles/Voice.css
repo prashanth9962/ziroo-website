@@ -1,0 +1,253 @@
+.voice {
+    padding: 110px 48px;
+    text-align: center;
+}
+
+.voice-h {
+    font-family: var(--serif);
+    font-size: clamp(40px, 5vw, 70px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -.03em;
+    color: var(--k);
+    margin-bottom: 18px;
+}
+
+.voice-h b {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--o);
+}
+
+.voice-sub {
+    color: var(--k3);
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 72px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+.voice-demo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Phone mockup */
+.phone {
+    width: 264px;
+    background: #1C1C1E;
+    border-radius: 46px;
+    padding: 12px;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, .18), 0 0 0 1px rgba(255, 255, 255, .06);
+    flex-shrink: 0;
+}
+
+.phone-screen {
+    background: #FAFAF8;
+    border-radius: 36px;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.phone-notch {
+    width: 88px;
+    height: 28px;
+    background: #1C1C1E;
+    border-radius: 0 0 18px 18px;
+    margin: 0 auto;
+}
+
+.phone-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--k);
+}
+
+.phone-header {
+    text-align: center;
+    padding: 6px 20px 14px;
+    border-bottom: 1px solid var(--ln);
+}
+
+.phone-header-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--k);
+}
+
+.phone-header-sub {
+    font-size: 11px;
+    color: #2ECC71;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+.phone-messages {
+    padding: 16px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 280px;
+}
+
+.phone-msg {
+    max-width: 86%;
+    padding: 10px 14px;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all .45s cubic-bezier(.4, 0, .2, 1);
+}
+
+.phone-msg.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.phone-msg.user {
+    background: var(--k);
+    color: #fff;
+    border-radius: 18px 18px 4px 18px;
+    align-self: flex-end;
+}
+
+.phone-msg.ziroo {
+    background: #fff;
+    color: var(--k);
+    border-radius: 18px 18px 18px 4px;
+    align-self: flex-start;
+    border: 1px solid var(--ln);
+}
+
+.phone-sent {
+    display: block;
+    margin-top: 6px;
+    font-size: 11px;
+    color: #2ECC71;
+    font-weight: 500;
+}
+
+.phone-input-row {
+    padding: 10px 14px 14px;
+}
+
+.phone-input-pill {
+    background: #fff;
+    border-radius: 24px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--ln);
+}
+
+.phone-mic-btn {
+    width: 28px;
+    height: 28px;
+    background: var(--o);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.phone-input-hint {
+    font-size: 12px;
+    color: var(--k4);
+}
+
+/* Right side */
+.voice-right {
+    text-align: left;
+    padding-top: 32px;
+    max-width: 380px;
+}
+
+.voice-right h3 {
+    font-family: var(--serif);
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 16px;
+    letter-spacing: -.5px;
+    line-height: 1.2;
+    color: var(--k);
+}
+
+.voice-right p {
+    color: var(--k3);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 44px;
+    font-weight: 300;
+}
+
+.voice-features {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.voice-feat {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.voice-feat-icon {
+    width: 36px;
+    height: 36px;
+    background: var(--ob);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.voice-feat-text strong {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: var(--k);
+}
+
+.voice-feat-text span {
+    font-size: 13px;
+    color: var(--k4);
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+    .voice {
+        padding: 72px 24px;
+    }
+
+    .voice-demo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voice-right {
+        max-width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .voice-features {
+        align-items: flex-start;
+    }
+}
