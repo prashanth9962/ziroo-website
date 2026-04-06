@@ -22,7 +22,7 @@ export default function Hero() {
             <p className="hsub r d2">Only what you allow. Always private. Already working.</p>
 
             <div className="hbtns r">
-                <button className="hbp" onClick={() => go('waitlist')}>Get early access →</button>
+                <a className="hbp" href="https://form.typeform.com/to/S2SsHox2" target="_blank" rel="noopener noreferrer">Get early access →</a>
                 <a className="hbs" href="#features">See how it works</a>
             </div>
             <p className="hnote r"><b>847 professionals</b> already inside · free to start</p>

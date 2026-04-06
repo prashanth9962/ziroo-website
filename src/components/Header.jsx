@@ -29,7 +29,7 @@ export default function Header() {
             <div className="nav-r">
                 <a className="nlink" href="#features">Product</a>
                 <a className="nlink" href="#trust">Security</a>
-                <button className="ncta" onClick={() => go('waitlist')}>Get early access</button>
+                <a className="ncta" href="https://form.typeform.com/to/S2SsHox2" target="_blank" rel="noopener noreferrer">Get early access</a>
             </div>
         </nav>
     );
