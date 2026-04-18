@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 export default function Footer() {
@@ -17,9 +18,9 @@ export default function Footer() {
                     </svg>
                 </div>
                 <div className="ft-links">
-                    <a className="ftl" href="#">Privacy</a>
+                    <Link className="ftl" to="/privacy">Privacy</Link>
                     <a className="ftl" href="#">Security</a>
-                    <a className="ftl" href="#">Terms</a>
+                    <Link className="ftl" to="/terms">Terms</Link>
                     <a className="ftl" href="#">Contact</a>
                 </div>
                 <div className="ft-r">© 2026 Ziroo · SOC 2 Type II · ISO 27001</div>
