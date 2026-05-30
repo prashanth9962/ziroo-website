@@ -1,10 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-  <defs>
-    <linearGradient id="g" x1="18" y1="20" x2="62" y2="52" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#D95A33"/>
-      <stop offset="100%" stop-color="#F2A58A"/>
-    </linearGradient>
-  </defs>
-  <rect width="72" height="72" rx="16" fill="#F5F0E8"/>
-  <path d="M50 36 C58 22, 68 22, 68 36 C68 50, 58 50, 50 36 C42 22, 30 22, 30 36 C30 50, 42 50, 50 36 Z" transform="translate(-13,0)" stroke="url(#g)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" fill="#0a0908"/>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="#ede6d6" font-family="serif" font-size="14" font-style="italic">Z</text>
 </svg>
