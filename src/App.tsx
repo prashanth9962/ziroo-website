@@ -191,7 +191,7 @@ export default function App() {
                 </p>
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
                   <a
-                    href="https://form.typeform.com/to/k81YgJFn"
+                    href="https://form.typeform.com/to/IJISqcg1"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center"
