@@ -9,26 +9,25 @@ export default function Terms() {
     <div style={{ background: 'var(--bg)', color: 'var(--cream)', minHeight: '100vh', overflowY: 'auto' }}>
 
       {/* Nav */}
-      <nav style={{
+      <nav className="legal-nav" style={{
         position: 'sticky', top: 0, zIndex: 50,
         borderBottom: '1px solid var(--hairline)',
         background: 'var(--bg)',
-        padding: '18px 40px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       }}>
-        <span className="serif-i" style={{ fontSize: '20px', color: 'var(--cream)' }}>Ziroo</span>
+        <Logo />
         <div />
       </nav>
 
       {/* Back link */}
-      <div style={{ padding: '24px 40px 0' }}>
+      <div className="legal-back">
         <Link to="/" style={{ color: 'var(--cream-soft)', fontSize: '13px', textDecoration: 'none', letterSpacing: '0.05em' }}>
           ← Back to home
         </Link>
       </div>
 
       {/* Content */}
-      <article style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 40px 96px' }}>
+      <article className="legal-article" style={{ maxWidth: '720px', margin: '0 auto' }}>
 
         <h1 style={{ fontSize: '36px', fontWeight: 300, letterSpacing: '-0.02em', marginBottom: '8px' }}>Terms of Service</h1>
         <p style={{ color: 'var(--cream-faint)', fontSize: '13px', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '48px' }}>Last updated: April 18, 2026</p>
@@ -202,13 +201,12 @@ export default function Terms() {
       </article>
 
       {/* Footer */}
-      <footer style={{
+      <footer className="legal-footer" style={{
         borderTop: '1px solid var(--hairline)',
-        padding: '24px 40px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         flexWrap: 'wrap', gap: '12px',
       }}>
-        <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+        <div className="legal-footer-links" style={{ display: 'flex', alignItems: 'center' }}>
           <Logo height={22} />
           <Link to="/privacy" style={{ color: 'var(--cream-faint)', textDecoration: 'none' }}><span className="smallcaps">Privacy</span></Link>
           <span className="smallcaps" style={{ color: 'var(--cream-faint)' }}>Security</span>

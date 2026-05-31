@@ -81,7 +81,7 @@ export default function App() {
             </div>
             <div className="flex-1 flex items-center">
               <div className="max-w-[820px] fade-in">
-                <h1 className="font-light leading-[1.02] tracking-[-0.02em]" style={{ fontSize: 'clamp(36px, 5.5vw, 72px)', whiteSpace: 'nowrap' }}>
+                <h1 className="font-light leading-[1.02] tracking-[-0.02em]" style={{ fontSize: 'clamp(28px, 5.5vw, 72px)' }}>
                   <span>AI That Runs Your Company</span><br />
                   <span>While You </span><span className="serif-i">Sleep!</span>
                 </h1>
@@ -183,7 +183,7 @@ export default function App() {
             </div>
             <div className="flex-1 flex items-center justify-center" style={{ paddingBottom: '8vh' }}>
               <div className="text-center max-w-[760px] fade-in">
-                <h2 className="font-light leading-[1.04] tracking-[-0.02em]" style={{ fontSize: 'clamp(46px, 7vw, 84px)' }}>
+                <h2 className="font-light leading-[1.04] tracking-[-0.02em]" style={{ fontSize: 'clamp(32px, 7vw, 84px)' }}>
                   Stop burning tokens, hire <span className="serif-i">Ziroo.</span>
                 </h2>
                 <p className="serif-i mt-8 mx-auto text-[19px] leading-snug max-w-[440px]" style={{ color: 'var(--cream-soft)' }}>
