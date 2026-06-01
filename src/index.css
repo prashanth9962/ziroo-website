@@ -68,7 +68,7 @@ body {
 
 .bg-overlay {
   z-index: 1;
-  background: linear-gradient(#0a090840, #0a090899);
+  background: linear-gradient(#0a0908aa, #0a0908cc);
   position: absolute;
   inset: 0;
 }

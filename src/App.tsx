@@ -41,29 +41,6 @@ export default function App() {
 
   return (
     <>
-      {/* Page indicator — horizontal dashes at bottom center */}
-      <div style={{
-        position: 'fixed',
-        bottom: '18px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        display: 'flex',
-        gap: '8px',
-        zIndex: 50,
-      }}>
-        {Array.from({ length: TOTAL }).map((_, i) => (
-          <span
-            key={i}
-            style={{
-              width: '18px',
-              height: '1px',
-              background: i === current ? 'var(--cream)' : 'var(--cream-faint)',
-              transition: 'background 200ms',
-            }}
-          />
-        ))}
-      </div>
-
       <div ref={containerRef} className="snap-container">
 
         {/* Page 1 — Hero */}
@@ -74,10 +51,21 @@ export default function App() {
           <div className="page-content">
             <div className="flex items-start justify-between">
               <Logo />
-              <div className="text-right">
-                <div className="smallcaps">i / iv</div>
-                <div className="smallcaps mt-1">private access</div>
-              </div>
+              <a
+                href="https://form.typeform.com/to/IJISqcg1"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: 'var(--cream)',
+                  fontSize: '11px',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                  textDecoration: 'none',
+                  padding: '8px 0',
+                }}
+              >
+                Join the waitlist →
+              </a>
             </div>
             <div className="flex-1 flex items-center">
               <div className="max-w-[820px] fade-in">
@@ -87,8 +75,8 @@ export default function App() {
                 </h1>
               </div>
             </div>
-            <div className="flex items-end justify-between">
-              <span className="smallcaps">SCROLL ———</span>
+            <div className="flex justify-center">
+              <span style={{ color: 'rgba(255,255,255,0.25)', fontSize: '10px', letterSpacing: '0.2em', textTransform: 'uppercase' }}>scroll to discover</span>
             </div>
           </div>
         </section>
@@ -101,54 +89,42 @@ export default function App() {
           <div className="page-content">
             <div className="flex items-start justify-between">
               <Logo />
-              <div className="text-right">
-                <div className="smallcaps">ii / iv</div>
-                <div className="smallcaps mt-1">the problem</div>
-              </div>
             </div>
             <div className="flex-1 flex items-center justify-center">
               <div className="text-center max-w-[900px] fade-in">
                 <h2 className="font-light leading-[1.05] tracking-[-0.02em]" style={{ fontSize: 'clamp(38px, 6vw, 64px)' }}>
                   NEVER HIRE AGAIN
                 </h2>
-                <p className="serif-i mt-10 text-[18px]" style={{ color: 'var(--cream-soft)', letterSpacing: '0.05em' }}>
+                <p className="serif-i mt-10 text-[18px]" style={{ color: 'var(--cream)', letterSpacing: '0.05em' }}>
                   You're an operator, or you should be.
                 </p>
-                <p className="serif-i mt-4 text-[18px]" style={{ color: 'var(--cream-soft)', letterSpacing: '0.05em' }}>
+                <p className="serif-i mt-4 text-[18px]" style={{ color: 'var(--cream)', letterSpacing: '0.05em' }}>
                   Ziroo is your favorite teammate. Never sleeps.
                 </p>
-                <p className="serif-i mt-4 text-[18px]" style={{ color: 'var(--cream-faint)', letterSpacing: '0.05em' }}>
+                <p className="serif-i mt-4 text-[18px]" style={{ color: 'var(--cream)', letterSpacing: '0.05em' }}>
                   Your company's standing army.
                 </p>
               </div>
             </div>
-            <div className="flex items-end justify-between">
-              <span className="smallcaps">
-                <span className="serif-i" style={{ color: 'var(--cream-soft)' }}>§ the bottleneck is still you</span>
-              </span>
-            </div>
+            <div />
           </div>
         </section>
 
         {/* Page 3 — Meet Naya */}
         <section className={`snap-page${current === 2 ? ' is-active' : ''}`} data-page="2">
           <div className="bg-img" style={{ backgroundImage: `url(${page3})` }} />
-          <div className="bg-overlay" />
+          <div className="bg-overlay" style={{ background: 'linear-gradient(#0a0908cc, #0a0908e6)' }} />
           <div className="grain" />
           <div className="page-content">
             <div className="flex items-start justify-between">
               <Logo />
-              <div className="text-right">
-                <div className="smallcaps">iii / iv</div>
-              </div>
             </div>
-            <div className="flex-1 flex items-center">
-              <div className="max-w-[820px] fade-in">
-                <h2 className="font-light leading-[1.05] tracking-[-0.02em]" style={{ fontSize: 'clamp(38px, 6vw, 64px)' }}>
+            <div className="flex-1 flex items-center justify-center">
+              <div className="text-center max-w-[900px] fade-in">
+                <h2 className="font-light leading-[1.05] tracking-[-0.02em]" style={{ fontSize: 'clamp(38px, 7vw, 80px)' }}>
                   What Ziroo can do?
                 </h2>
-                <p className="smallcaps mt-8" style={{ color: 'var(--cream)', letterSpacing: '0.18em', fontSize: '11px' }}>Get Started</p>
-                <div className="mt-5 space-y-1 text-[18px] leading-[1.6] serif-i" style={{ color: 'var(--cream-soft)' }}>
+                <div className="mt-10 space-y-2 text-[20px] leading-[1.7] serif-i" style={{ color: 'var(--cream)' }}>
                   <p>Ziroo is your team.</p>
                   <p>Ziroo plans your roadmap.</p>
                   <p>Ziroo ships your code.</p>
@@ -157,14 +133,10 @@ export default function App() {
                   <p>Ziroo closes your deals.</p>
                   <p>Ziroo posts your tweets.</p>
                 </div>
-                <p className="mt-6 text-[18px] serif-i" style={{ color: 'var(--cream)' }}>One name. Every role.</p>
+                <p className="mt-8 text-[22px] serif-i" style={{ color: 'var(--cream)' }}>One name. Every role.</p>
               </div>
             </div>
-            <div className="flex items-end justify-between">
-              <span className="smallcaps">
-                <span className="serif-i" style={{ color: 'var(--cream-soft)' }}>§ the teammate your team has been waiting for</span>
-              </span>
-            </div>
+            <div />
           </div>
         </section>
 
@@ -176,17 +148,13 @@ export default function App() {
           <div className="page-content">
             <div className="flex items-start justify-between">
               <Logo />
-              <div className="text-right">
-                <div className="smallcaps">iv / iv</div>
-                <div className="smallcaps mt-1">join</div>
-              </div>
             </div>
             <div className="flex-1 flex items-center justify-center" style={{ paddingBottom: '8vh' }}>
               <div className="text-center max-w-[760px] fade-in">
                 <h2 className="font-light leading-[1.04] tracking-[-0.02em]" style={{ fontSize: 'clamp(32px, 7vw, 84px)' }}>
                   Stop burning tokens, hire <span className="serif-i">Ziroo.</span>
                 </h2>
-                <p className="serif-i mt-8 mx-auto text-[19px] leading-snug max-w-[440px]" style={{ color: 'var(--cream-soft)' }}>
+                <p className="serif-i mt-8 mx-auto text-[19px] leading-snug max-w-[440px]" style={{ color: 'var(--cream)' }}>
                   Founding access is open to the first one hundred teams. No demo. No deck. Just a quiet hello.
                 </p>
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
@@ -211,9 +179,9 @@ export default function App() {
             </div>
             <div className="flex items-end justify-between">
               <span className="smallcaps">
-                <Link to="/privacy" style={{ color: 'var(--cream-faint)', textDecoration: 'none' }}>privacy</Link>
-                <span style={{ color: 'var(--cream-faint)' }}> · </span>
-                <Link to="/terms" style={{ color: 'var(--cream-faint)', textDecoration: 'none' }}>terms</Link>
+                <Link to="/privacy" style={{ color: 'var(--cream)', textDecoration: 'none' }}>privacy</Link>
+                <span style={{ color: 'var(--cream)' }}> · </span>
+                <Link to="/terms" style={{ color: 'var(--cream)', textDecoration: 'none' }}>terms</Link>
               </span>
             </div>
           </div>
