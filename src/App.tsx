@@ -182,6 +182,8 @@ export default function App() {
                 <Link to="/privacy" style={{ color: 'var(--cream)', textDecoration: 'none' }}>privacy</Link>
                 <span style={{ color: 'var(--cream)' }}> · </span>
                 <Link to="/terms" style={{ color: 'var(--cream)', textDecoration: 'none' }}>terms</Link>
+                <span style={{ color: 'var(--cream)' }}> · </span>
+                <Link to="/support" style={{ color: 'var(--cream)', textDecoration: 'none' }}>support</Link>
               </span>
             </div>
           </div>
