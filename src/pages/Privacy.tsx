@@ -90,14 +90,14 @@ export default function Privacy() {
         <Section title="4. AI model training and your data">
           <p style={body}><strong>What we do:</strong> We use your data to build and personalize your individual context, relationship, and decision graphs within your account. We use aggregated, anonymized usage patterns to improve our algorithms' general performance.</p>
           <p style={body}><strong>What we do NOT do:</strong> We do NOT use your emails, messages, screen content, or meeting transcripts to train general-purpose AI models. We do NOT share your User Data with third-party AI model providers for their model training purposes. We do NOT sell, rent, or license your User Data to any third party.</p>
-          <p style={body}>Certain Service features utilize third-party large language model APIs (e.g., Anthropic Claude, OpenAI GPT). When we send data to these APIs, we transmit only the minimum data necessary, use API configurations that disable data retention and model training, and have Data Processing Agreements in place with each provider.</p>
+          <p style={body}>Certain Service features utilize third-party large language model APIs (e.g., OpenAI GPT). When we send data to these APIs, we transmit only the minimum data necessary, use API configurations that disable data retention and model training, and have Data Processing Agreements in place with each provider.</p>
         </Section>
 
         <Section title="5. Who we share your data with">
           <ul style={list}>
-            <li><strong>Cloud infrastructure providers:</strong> AWS or Google Cloud Platform.</li>
+            <li><strong>Cloud infrastructure providers:</strong> Google Cloud Platform.</li>
             <li><strong>Payment processors:</strong> Stripe, Inc.</li>
-            <li><strong>AI API providers:</strong> Anthropic, OpenAI, or equivalent (under zero-data-retention agreements).</li>
+            <li><strong>AI API providers:</strong> OpenAI (under zero-data-retention agreements).</li>
             <li><strong>Analytics providers:</strong> PostHog or Mixpanel (anonymized usage analytics only).</li>
             <li><strong>Email delivery:</strong> SendGrid or equivalent (transactional emails only).</li>
             <li><strong>Legal and regulatory:</strong> Only when required by applicable law or court order.</li>
