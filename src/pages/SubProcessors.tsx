@@ -32,7 +32,7 @@ export default function SubProcessors() {
         <h1 style={{ fontSize: '36px', fontWeight: 300, letterSpacing: '-0.02em', marginBottom: '8px' }}>Sub-processors</h1>
         <p style={{ color: 'var(--cream-faint)', fontSize: '13px', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '48px' }}>Last updated: July 15, 2026</p>
 
-        <p style={body}>Ziroo AI Technologies Private Limited ("Ziroo") engages the third-party sub-processors listed below to help deliver the Ziroo platform and services. Each sub-processor is bound by a Data Processing Agreement that requires appropriate security and confidentiality obligations. We transmit only the minimum data necessary to each provider for its stated purpose.</p>
+        <p style={body}>Ziroo, Inc. ("Ziroo") engages the third-party sub-processors listed below to help deliver the Ziroo platform and services. Each sub-processor is bound by a Data Processing Agreement that requires appropriate security and confidentiality obligations. We transmit only the minimum data necessary to each provider for its stated purpose.</p>
 
         <p style={body}>We do NOT sell your data, and we do NOT share it with advertisers, data brokers, or any party for marketing purposes. Our AI API providers operate under zero-data-retention agreements and do not use your data for model training.</p>
 

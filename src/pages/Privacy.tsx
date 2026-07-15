@@ -32,12 +32,12 @@ export default function Privacy() {
         <h1 style={{ fontSize: '36px', fontWeight: 300, letterSpacing: '-0.02em', marginBottom: '8px' }}>Privacy Policy</h1>
         <p style={{ color: 'var(--cream-faint)', fontSize: '13px', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '48px' }}>Last updated: April 18, 2026</p>
 
-        <p style={body}>This Privacy Policy explains how Ziroo AI Technologies Private Limited ("Ziroo," "we," "us," or "our") collects, uses, stores, shares, and protects your personal data when you use the Ziroo platform and services (the "Service"). It applies to all users of the Service regardless of location, with jurisdiction-specific provisions in Sections 12 through 17.</p>
+        <p style={body}>This Privacy Policy explains how Ziroo, Inc. ("Ziroo," "we," "us," or "our") collects, uses, stores, shares, and protects your personal data when you use the Ziroo platform and services (the "Service"). It applies to all users of the Service regardless of location, with jurisdiction-specific provisions in Sections 12 through 17.</p>
         <p style={body}>Ziroo is a context-aware AI platform that processes sensitive professional data, including screen content, email, calendar, messaging, and meeting audio. We take this responsibility seriously. This policy is designed to be specific to how our product actually works, not a generic template.</p>
 
         <Section title="1. Data controller and contact information">
           <p style={body}>The data controller responsible for your personal data is:</p>
-          <p style={body}><strong>Ziroo AI Technologies Private Limited</strong></p>
+          <p style={body}><strong>Ziroo, Inc.</strong> (a Delaware C corporation, United States)</p>
         </Section>
 
         <Section title="2. Categories of personal data we collect">
@@ -106,7 +106,7 @@ export default function Privacy() {
         </Section>
 
         <Section title="6. International data transfers">
-          <p style={body}>Ziroo is incorporated in India and operates cloud infrastructure that may process data in multiple regions. Depending on your location, your data may be transferred to and processed in countries other than your country of residence.</p>
+          <p style={body}>Ziroo is incorporated in the United States (Delaware) and operates cloud infrastructure hosted in the United States. Depending on your location, your data may be transferred to and processed in countries other than your country of residence, including the United States.</p>
         </Section>
 
         <Section title="7. Data retention">

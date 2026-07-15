@@ -33,7 +33,7 @@ export default function Terms() {
         <p style={{ color: 'var(--cream-faint)', fontSize: '13px', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '48px' }}>Last updated: April 18, 2026</p>
 
         <Section title="1. Introduction and acceptance">
-          <p style={body}>These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Ziroo AI Technologies Private Limited, a company incorporated under the laws of India ("Ziroo," "we," "us," or "our").</p>
+          <p style={body}>These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Ziroo, Inc., a Delaware C corporation ("Ziroo," "we," "us," or "our").</p>
           <p style={body}>Ziroo provides a context-aware artificial intelligence platform that passively captures screen content and meeting audio, constructs relationship and context intelligence graphs, and delivers proactive voice-first briefings (the "Service").</p>
           <p style={body}>By creating an account, installing any Ziroo application, or otherwise accessing or using the Service, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, do not use the Service.</p>
         </Section>
@@ -137,7 +137,7 @@ export default function Terms() {
 
         <Section title="8. Intellectual property">
           <Sub title="8.1 Ziroo's IP">
-            <p style={body}>The Service, including its software, algorithms, user interface, documentation, branding, and trademarks, is owned by Ziroo AI Technologies Private Limited. These Terms do not grant you any right or interest in the Service beyond the limited right to use it in accordance with these Terms.</p>
+            <p style={body}>The Service, including its software, algorithms, user interface, documentation, branding, and trademarks, is owned by Ziroo, Inc. These Terms do not grant you any right or interest in the Service beyond the limited right to use it in accordance with these Terms.</p>
           </Sub>
           <Sub title="8.2 Feedback">
             <p style={body}>If you provide Ziroo with feedback or suggestions, you grant Ziroo a perpetual, irrevocable, worldwide, royalty-free license to use and incorporate such feedback into the Service without any obligation to you.</p>
@@ -174,7 +174,7 @@ export default function Terms() {
         </Section>
 
         <Section title="14. Governing law and dispute resolution">
-          <p style={body}>These Terms are governed by the laws applicable to your primary place of residence. For India-based users, courts in Bangalore, Karnataka shall have exclusive jurisdiction under the laws of India, supplemented by the DPDP Act 2023.</p>
+          <p style={body}>These Terms are governed by the laws of the State of Delaware, United States, without regard to its conflict of law principles. You agree that the state and federal courts located in Delaware shall have exclusive jurisdiction over any dispute arising out of or relating to these Terms or the Service, subject to any mandatory consumer protection laws of your place of residence.</p>
           <p style={body}><strong>Class action waiver:</strong> TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CLAIMS SHALL BE BROUGHT IN YOUR INDIVIDUAL CAPACITY AND NOT AS A CLASS MEMBER IN ANY REPRESENTATIVE PROCEEDING.</p>
         </Section>
 
