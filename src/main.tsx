@@ -6,6 +6,7 @@ import App from './App.tsx'
 import Privacy from './pages/Privacy.tsx'
 import Terms from './pages/Terms.tsx'
 import Support from './pages/Support.tsx'
+import SubProcessors from './pages/SubProcessors.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/support" element={<Support />} />
+        <Route path="/sub-processors" element={<SubProcessors />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

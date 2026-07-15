@@ -184,6 +184,8 @@ export default function App() {
                 <Link to="/terms" style={{ color: 'var(--cream)', textDecoration: 'none' }}>terms</Link>
                 <span style={{ color: 'var(--cream)' }}> · </span>
                 <Link to="/support" style={{ color: 'var(--cream)', textDecoration: 'none' }}>support</Link>
+                <span style={{ color: 'var(--cream)' }}> · </span>
+                <Link to="/sub-processors" style={{ color: 'var(--cream)', textDecoration: 'none' }}>sub-processors</Link>
               </span>
             </div>
           </div>
