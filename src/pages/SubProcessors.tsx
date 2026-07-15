@@ -152,19 +152,18 @@ export default function SubProcessors() {
 const infra = [
   { name: 'Google Cloud Platform', purpose: 'Hosting, storage, and infrastructure', data: 'Service data, logs, stored workspace context (as configured)' },
   { name: 'Stripe, Inc.', purpose: 'Payments and billing', data: 'Billing contact info, transaction metadata (card details handled by Stripe)' },
-  { name: 'PostHog / Mixpanel', purpose: 'Product analytics', data: 'Anonymized usage events and identifiers (as configured)' },
-  { name: 'SendGrid', purpose: 'Transactional email delivery', data: 'Email address and transactional message content' },
 ]
 
 const integrations = [
   { name: 'Slack', purpose: 'Core platform integration (OAuth, messaging, app functionality)', data: 'Slack messages and metadata in channels/DMs where Ziroo is used' },
   { name: 'Google (Gmail / Calendar)', purpose: 'Email and calendar integration (if enabled)', data: 'Email and calendar data accessed via scopes you authorize' },
   { name: 'Microsoft (Outlook / Teams)', purpose: 'Email and messaging integration (if enabled)', data: 'Email and message data accessed via scopes you authorize' },
-  { name: 'LinkedIn', purpose: 'Professional network integration (if enabled)', data: 'Connections, names, titles, and companies you import' },
 ]
 
 const ai = [
-  { name: 'OpenAI', purpose: 'Large language model API', data: 'Prompts and content needed to generate outputs (zero data retention)' },
+  { name: 'Anthropic', purpose: 'Large language model API (Claude)', data: 'Prompts and content needed to generate outputs (zero data retention)' },
+  { name: 'Google (Gemini)', purpose: 'Large language model API (Gemini)', data: 'Prompts and content needed to generate outputs (zero data retention)' },
+  { name: 'OpenAI', purpose: 'Large language model API (GPT)', data: 'Prompts and content needed to generate outputs (zero data retention)' },
 ]
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {

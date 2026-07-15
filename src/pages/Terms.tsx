@@ -145,7 +145,7 @@ export default function Terms() {
         </Section>
 
         <Section title="9. Third-party services and integrations">
-          <p style={body}>The Service integrates with third-party platforms (Google Workspace, Microsoft 365, Slack, LinkedIn, Zoom, etc.). Your use of these integrations is subject to the respective third-party terms and privacy policies. Ziroo is not responsible for the availability, accuracy, or conduct of any third-party service.</p>
+          <p style={body}>The Service integrates with third-party platforms (Google Workspace, Microsoft 365, Slack, Zoom, etc.). Your use of these integrations is subject to the respective third-party terms and privacy policies. Ziroo is not responsible for the availability, accuracy, or conduct of any third-party service.</p>
         </Section>
 
         <Section title="10. Disclaimers">
